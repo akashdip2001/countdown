@@ -19,6 +19,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 2em;
     line-height: 1.5; /* Adjusted for better readability */
+    white-space: pre-wrap; /* Allows the <br> to create new lines */
 }
 
 #countdown {
@@ -48,7 +49,12 @@ h1 {
     font-weight: bold;
 }
 
+/* Larger screens: display in single line */
 @media (min-width: 600px) {
+    h1 {
+        white-space: nowrap; /* Forces the title to stay in a single line */
+    }
+
     .countdown-element {
         padding: 20px;
         width: 100px;
@@ -66,6 +72,7 @@ h1 {
 @media (min-width: 900px) {
     h1 {
         font-size: 2.5em;
+        white-space: nowrap; /* Ensures single line on larger screens */
     }
 
     .countdown-element {
