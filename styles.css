@@ -55,6 +55,11 @@ h1 {
         white-space: nowrap;
 } */
 
+    .title02 {
+
+        display: none;
+    }
+
     .countdown-element {
         padding: 20px;
         width: 100px;
@@ -67,6 +72,14 @@ h1 {
     .label {
         font-size: 1em;
     }
+}
+
+@media (max-width: 600px) {
+    
+        .title01 {
+
+        display: none;
+        }
 }
 
 @media (min-width: 900px) {
