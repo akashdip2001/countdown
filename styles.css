@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-h1 {
+.title {
     margin-bottom: 20px;
     font-size: 2em;
     line-height: 1.5; /* Adjusted for better readability */
