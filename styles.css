@@ -19,7 +19,6 @@ h1 {
     margin-bottom: 20px;
     font-size: 2em;
     line-height: 1.5; /* Adjusted for better readability */
-    white-space: pre-wrap; /* Allows the <br> to create new lines */
 }
 
 #countdown {
@@ -49,15 +48,20 @@ h1 {
     font-weight: bold;
 }
 
+/* Hide desktop title by default */
+.desktop-title {
+    display: none;
+}
+
 /* Larger screens: display in single line */
 @media (min-width: 600px) {
-    /* h1 {
-        white-space: nowrap;
-} */
-
-    .title02 {
-
+    .mobile-title {
         display: none;
+    }
+
+    .desktop-title {
+        display: block;
+        font-size: 2em;
     }
 
     .countdown-element {
@@ -74,19 +78,10 @@ h1 {
     }
 }
 
-@media (max-width: 600px) {
-    
-        .title01 {
-
-        display: none;
-        }
-}
-
 @media (min-width: 900px) {
-  /*  h1 {
+    .desktop-title {
         font-size: 2.5em;
-        white-space: nowrap;
-    } */
+    }
 
     .countdown-element {
         padding: 25px;
